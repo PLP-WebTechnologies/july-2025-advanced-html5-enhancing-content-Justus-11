@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to my home page</h1>
+    <p>This page showcases lists, tables, media.</p>
+  </header>
+
+  <!-- Lists Section -->
+  <section>
+    <h2>Popular Web Technologies</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+
+    <h2>Front-end Stack (Ordered)</h2>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Frameworks (React, Vue, etc.)</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Course Schedule</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>HTML Basics</td>
+          <td>2 hours</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>CSS Styling</td>
+          <td>2.5 hours</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>JavaScript Intro</td>
+          <td>3 hours</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+ <section>
+    <h2>Media Gallery</h2>
+
+    <h3>Software Engineering Image</h3>
+    <img src="c:\Users\hp\Downloads\pexels-kevin-ku-92347-577585.jpg" alt="Software Engineering Concept" width="300">
+
+    <h3>Podcast: Becoming a Software Engineer</h3>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video: Learn Software Development</h3>
+    <video controls width="320">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  <!-- Form Section -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required ><br><br>
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required ><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="example@example.com"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" minlength="4" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm" name="confirm" required minlength="6"><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br><br>
+
+        <label>Preferred Contact Method:</label><br>
+        <input type="radio" id="contactEmail" name="contact" value="email" required>
+        <label for="contactEmail">Email</label><br>
+        <input type="radio" id="contactPhone" name="contact" value="phone">
+        <label for="contactPhone">Phone</label><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Info</legend>
+
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself..." maxlength="250"></textarea><br><br>
+
+        <label for="newsletter">Subscribe to newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" checked readonly><br><br>
+      </fieldset>
+
+      <input type="submit" value="Register">
+      <input type="reset" value="Reset">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Justus Wambua. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
